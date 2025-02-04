@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <center><h1>Register</h1></center>
+    <center><form method="get" action="./registersuccess.html">
+        <input type="text" name="username" required placeholder="username" pattern="[a-z]+" title="please enter small alphabets only"> <br> <br>
+        <input type="email" name="email" placeholder="email" required> <br><br>
+        <input type="number" name="number" placeholder="Phone number" pattern="/+91[6789][0-9]{9}" title="please follow indian phone number format" required>
+        <input type="password" name="password" placeholder="password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&]).{8,16}" title="password should contain atleast 1 small ,big char , a digit and a special char and length should be b/w 8 to 16"> <br><br>
+        <input type="submit" value="Register"> <br> <br> 
+        <a href="./login.html" target="_blank"><h3 style="margin-right: 8%;"><i>login</i></h3></a>
+    </form></center>
+   
+</body>
+</html>

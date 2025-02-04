@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Change Form</title>
+</head>
+<body>
+    <center>
+        <center><h3>Change the password</h3></center>
+        <form method="get" action="./changedpassword.html">
+            <input type="text" name="username" placeholder="username" required pattern="[a-z]+" title="please enter small alphabets only" > <br><br>
+            <input type="password" name="newpassword" placeholder="new password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&]).{8,16}" title="password should contain atleast 1 small ,big char , a digit and a special char and length should be b/w 8 to 16" > <br><br>
+            <input type="text" name="otp" placeholder="otp" required> <br><br>
+            <strong>OTP:548629</strong> <br><br>
+            <input type="submit" value="Change password"> <br><br> 
+            <a href="./login.html" target="_blank"><i>Login</i></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="./register.html" target="_blank"><i>Register</i></a>
+        </form>
+    </center>
+</body>
+</html>
