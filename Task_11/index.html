@@ -27,7 +27,7 @@
                                 <input type="radio" name="gender" id="male">
                                 <label for="male">Male</label> <br><br>
                                 <label for="number" >Whatsapp No</label>  
-                                <input type="text" name="number" value="+91" minlength="13" pattern="\91[6,7,8,9][0-9]{9}" maxlength="13" title="please enter whatsapp number in indian number type" required> &nbsp; &nbsp; &nbsp; &nbsp; 
+                                <input type="text" name="number" value="+91" pattern="\+91[6,7,8,9][0-9]{9}" minlength=13 maxlength=13 title="please enter whatsapp number in indian number type" required> &nbsp; &nbsp; &nbsp; &nbsp; 
                                 <label for="aadhar">Aadhar No:</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                 <input type="text" name="aadhar" minlength="12"style="margin-left: 90px;" maxlength="12" pattern="[0-9]{12}" required> <br><br>
                                 <label for="photo">Photo</label>
@@ -76,18 +76,18 @@
                                 <legend><h3 style="background-color: rgb(65, 102, 225); color: white; border-radius: 8px; padding: 5px;">Mode Of Payment & Pass Collection</h3></legend>
                            
                     <label for="pmode">Payment Mode </label>
-                    <select name="pmode" style="width: 130px; margin-left: 35px;">
+                    <select name="pmode" style="width: 130px; margin-left: 35px;" required>
                         <option value="" selected disabled>Select Payment Mode</option>
                         <option value="payment">Pay online</option>
                         <option value="payment">Pay at counter</option>
                     </select> <br><br>
                     <label for="pdm">Pass Delivery Mode</label>
-                    <select name="pdm" style="width: 150px; margin-left: 3px;">
+                    <select name="pdm" style="width: 150px; margin-left: 3px;" required>
                         <option value="" selected disabled>Select Pass Delivery Mode</option>
                         <option value="pass">at counter</option>
                     </select> <br><br>
                     <label for="center" >Center at which you want to Collect Pass</label>
-                    <select name="center" style="width: 150px; margin-left: 3px;">
+                    <select name="center" style="width: 150px; margin-left: 3px;" required>
                         <option value="">-----Select-----</option>
                         <option value="rtc_abids">RTC ABIDS -- HYD [05/02/2025]</option>
                         <option value="rtc_afzalgunj">RTC AFZALGANJ -- HYD [05/02/2025]</option>
